@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Cheat Sheet</title>
+    <!-- PAGE STYLE -->
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: lightgrey;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        table {
+            width: 650px;
+            margin: 0 auto;
+            border: 2px solid gray;
+            font-family: monospace;
+            font-size: 1.5em;
+        }
+        thead {
+            background-color: purple;
+            color: whitesmoke;
+        }
+        td {
+            border-top: 1px solid gray;
+            padding: 20px;
+        }
+        #code {
+            background-color: beige;
+            font-family: inherit;
+            font-size: inherit;
+        } 
+    </style>
+</head>
+<body>
+    <!-- HTML REFERENCE SHEET -->
+    <div class="html-sheet">
+        <h1>HTML Reference Sheet</h1>
+            <container>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;!DOCTYPE&gt;</span>
+                            </td>
+                            <td>Document Type</td>
+                            <td>Tells the browser what file type to expect.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;html&gt;</span>
+                            </td>
+                            <td>Html</td>
+                            <td>The html element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;head&gt;</span>
+                            </td>
+                            <td>Head</td>
+                            <td>The head element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;title&gt;</span>
+                            </td>
+                            <td>Title</td>
+                            <td>The title element defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;body&gt;</span>
+                            </td>
+                            <td>Body</td>
+                            <td>The body element represents the content of an HTML document. There can be only one body element in a document.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;header&gt;</span>
+                            </td>
+                            <td>Header</td>
+                            <td>The header element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;footer&gt;</span>
+                            </td>
+                            <td>Footer</td>
+                            <td>The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;p&gt;</span>
+                            </td>
+                            <td>Paragraph</td>
+                            <td>The p element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;h1&gt;-&lt;h6&gt;</span>
+                            </td>
+                            <td>Heading 1-6</td>
+                            <td>The h1 to h6 HTML elements represent six levels of section headings. h1 is the highest section level and h6 is the lowest.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;div&gt;</span>
+                            </td>
+                            <td>Divider</td>
+                            <td>The div element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;span&gt;</span>
+                            </td>
+                            <td>Span</td>
+                            <td>The span element is a generic inline container for phrasing content, which does not inherently represent anything.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;img&gt;</span>
+                            </td>
+                            <td>Image</td>
+                            <td>The img element embeds an image into the document.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;nav&gt;</span>
+                            </td>
+                            <td>Navigation</td>
+                            <td>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;video&gt;</span>
+                            </td>
+                            <td>Video</td>
+                            <td>The video element embeds a media player which supports video playback into the document. You can use video for audio content as well, but the audio element may provide a more appropriate user experience.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;ul&gt;</span>
+                            </td>
+                            <td>Unordered List</td>
+                            <td>The ul element represents an unordered list of items, typically rendered as a bulleted list.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;ol&gt;</span>
+                            </td>
+                            <td>Organized List</td>
+                            <td>The ol element represents an ordered list of items — typically rendered as a numbered list.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">&lt;li&gt;</span>
+                            </td>
+                            <td>List</td>
+                            <td>The li element is used to represent an item in a list. It must be contained in a parent element: an ordered list (ol), an unordered list (ul), or a menu (menu).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </container>    
+    </div>
+    <!-- CSS REFERENCE SHEET -->
+    <div class="css-sheet">
+        <h1>CSS Reference Sheet</h1>
+            <container>
+                <table>
+                    <thead>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">font-family</span>
+                            </td>
+                            <td>Font Family</td>
+                            <td>The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">font-size</span>
+                            </td>
+                            <td>Font Size</td>
+                            <td>The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">font-weight</span>
+                            </td>
+                            <td>Font Weight</td>
+                            <td>The font-weight CSS property sets the weight (or boldness) of the font. The weights available depend on the font-family that is currently set.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">color</span>
+                            </td>
+                            <td>Color</td>
+                            <td>The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">text-align</span>
+                            </td>
+                            <td>Text Align</td>
+                            <td>The text-align CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like vertical-align but in the horizontal direction.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">display</span>
+                            </td>
+                            <td>Display</td>
+                            <td>The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">position</span>
+                            </td>
+                            <td>Position</td>
+                            <td>The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">margin</span>
+                            </td>
+                            <td>Margin</td>
+                            <td>The margin CSS shorthand property sets the margin area on all four sides of an element.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">padding</span>
+                            </td>
+                            <td>Padding</td>
+                            <td>The padding CSS shorthand property sets the padding area on all four sides of an element at once.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span translate=no id="code">!important</span>
+                            </td>
+                            <td>Important</td>
+                            <td>A ! delimiter followed by the important keyword marks the declaration as important. The !important flag alters the rules selecting declarations inside the cascade. A declaration that is not important is called normal.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </container> 
+    </div>
+</body>
+</html>
